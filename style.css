@@ -1,0 +1,53 @@
+.background{
+    top: 0;
+    bottom: 0;
+    background: url(img/street1.png);
+    width: 1321px;
+    height: 702px;
+    background-position: center;
+    overflow: hidden;
+    /* animation: change 5s steps(8) infinite,
+    mov 7s linear infinite; */
+}
+
+.julito{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    background: url(img/capguy-walk.png) 0 0 no-repeat;
+    height: 325px;
+    width: 184px;
+    overflow: hidden;
+    animation: walk 1s steps(8) infinite,
+    moving 8s linear infinite;
+}
+
+@keyframes walk {
+    from { background-position: 0 0;}
+    to {background-position: -1472px 0;}
+}
+
+@keyframes moving {
+    from {
+        right: 100%;
+    }
+    to {
+        right: -325px;
+    }
+}
+
+/* @keyframes change {
+    from {background-position: 0 0;}
+    to{background-position: -1321px 0;}
+}
+
+@keyframes mov {
+    from {
+        left: 0 0;
+    }
+    to {
+        left: -194.75px 0;
+    }
+} */
+
